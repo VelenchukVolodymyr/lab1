@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитувальник</title>
+</head>
+<body>
+    <header>
+        <h1>Опитувальник</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="survey.html">Опитувальник</a></li>
+                <li><a href="registration.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="login">Логін:</label>
+            <input type="text" id="login" name="login" placeholder="Введіть логін" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Введіть ваше повідомлення" required></textarea>
+
+            <label for="destination">Оберіть напрямок:</label>
+            <select id="destination" name="destination" required>
+                <option value="default" selected>Оберіть напрямок</option>
+                <option value="sea">Морський відпочинок</option>
+                <option value="mountain">Гірські походи</option>
+                <option value="city">Екскурсії містами</option>
+            </select>
+
+            <p>Ваша улюблена пора року:</p>
+            <label><input type="radio" name="season" value="spring"> Весна</label>
+            <label><input type="radio" name="season" value="summer"> Літо</label>
+            <label><input type="radio" name="season" value="autumn"> Осінь</label>
+            <label><input type="radio" name="season" value="winter"> Зима</label>
+
+            <p>Оберіть вид відпочинку:</p>
+            <label><input type="checkbox" name="vacation_type" value="adventure"> Пригоди</label>
+            <label><input type="checkbox" name="vacation_type" value="relax"> Релакс</label>
+            <label><input type="checkbox" name="vacation_type" value="culture"> Культурний відпочинок</label>
+
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Туристична фірма. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
